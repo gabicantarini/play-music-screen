@@ -27,10 +27,28 @@ void ShowMenuOptions()
     string ChosenOption = Console.ReadLine()!;
     int NumericChoice = int.Parse(ChosenOption);
 
-    if(NumericChoice == 1)
+    switch (NumericChoice)
     {
-        Console.WriteLine("You choice were Option " + NumericChoice);
+        case 1: Console.WriteLine("Chosen option " + NumericChoice);
+            break; 
+
+        case 2: Console.WriteLine("Chosen option " + NumericChoice);
+            break;
+
+        case 3: Console.WriteLine("Chosen option " + NumericChoice);
+            break;
+
+        case 4: Console.WriteLine("Chosen option " + NumericChoice);
+            break;
+
+        case -1: Console.WriteLine("BYE BYE :)");
+            break;
+
+        default: Console.WriteLine("Invalid Option!");
+            break;
     }
+
+
 }
 
 ShowMenuOptions();
