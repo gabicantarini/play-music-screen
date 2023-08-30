@@ -7,14 +7,12 @@
 ██║░░░░░███████╗██║░░██║░░░██║░░░  ██║░╚═╝░██║╚██████╔╝██████╔╝██║╚█████╔╝
 ╚═╝░░░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═╝░░░░░╚═╝░╚═════╝░╚═════╝░╚═╝░╚════╝░" + "\n \nWelcome to Play Music!";
 
-List<string> BandListName = new List<string>();
+List<string> BandListName = new List<string>{"U2", "Cold Play", "Lulu Santos"};
 
 void ShowWelcomeMessage()
 {
-    Console.WriteLine(WelcomeMessage);
-   
+    Console.WriteLine(WelcomeMessage);   
 }
-
 
 void ShowMenuOptions()
 {
@@ -65,20 +63,19 @@ void RegisterNewBand()
 
 }
 
-
 void BandList()
 {
     Console.Clear();
-    Console.Write("Band List: \n");
-    for (int i = 0; i < BandListName.Count; i++)
-    {
-        Console.WriteLine($"Band: {BandListName[i]}");
+    Console.WriteLine("****************");
+    Console.WriteLine("  Band List ");
+    Console.WriteLine("****************\n");
+    foreach (string Band in BandListName)
+    { 
+        Console.WriteLine($"Band: {Band}");
     };
-    Console.WriteLine("Enter any digit to show MENU OPTIONS");
+    Console.WriteLine("\nEnter any digit to show MENU OPTIONS");
     Console.ReadKey();
     ShowMenuOptions();
-
 }
-
 
 ShowMenuOptions();
