@@ -1,0 +1,14 @@
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\bin\Debug\net6.0\PlayMusicScreen.exe
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\bin\Debug\net6.0\PlayMusicScreen.deps.json
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\bin\Debug\net6.0\PlayMusicScreen.runtimeconfig.json
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\bin\Debug\net6.0\PlayMusicScreen.dll
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\bin\Debug\net6.0\PlayMusicScreen.pdb
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\PlayMusicScreen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\PlayMusicScreen.AssemblyInfoInputs.cache
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\PlayMusicScreen.AssemblyInfo.cs
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\PlayMusicScreen.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\PlayMusicScreen.dll
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\refint\PlayMusicScreen.dll
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\PlayMusicScreen.pdb
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\PlayMusicScreen.genruntimeconfig.cache
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicScreen\PlayMusicScreen\obj\Debug\net6.0\ref\PlayMusicScreen.dll
