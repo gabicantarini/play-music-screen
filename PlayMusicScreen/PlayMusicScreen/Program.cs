@@ -25,10 +25,11 @@ void ShowMenuOptions()
 
     Console.Write("Enter your option: ");
     string ChosenOption = Console.ReadLine()!;
+    int NumericChoice = int.Parse(ChosenOption);
 
-    if(ChosenOption == "1")
+    if(NumericChoice == 1)
     {
-        Console.WriteLine("You choice were Option 1");
+        Console.WriteLine("You choice were Option " + NumericChoice);
     }
 }
 
