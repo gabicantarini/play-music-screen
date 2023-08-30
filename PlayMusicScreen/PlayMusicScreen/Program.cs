@@ -7,16 +7,18 @@
 ██║░░░░░███████╗██║░░██║░░░██║░░░  ██║░╚═╝░██║╚██████╔╝██████╔╝██║╚█████╔╝
 ╚═╝░░░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═╝░░░░░╚═╝░╚═════╝░╚═════╝░╚═╝░╚════╝░" + "\n \nWelcome to Play Music!";
 
+List<string> BandListName = new List<string>();
+
 void ShowWelcomeMessage()
 {
     Console.WriteLine(WelcomeMessage);
    
 }
 
-ShowWelcomeMessage();
 
 void ShowMenuOptions()
 {
+    ShowWelcomeMessage();
     Console.WriteLine("\nEnter 1 to register a new Band: ");
     Console.WriteLine("Enter 2 to show all our Band");
     Console.WriteLine("Enter 3 to rate our Band");
@@ -29,10 +31,10 @@ void ShowMenuOptions()
 
     switch (NumericChoice)
     {
-        case 1: Console.WriteLine("Chosen option " + NumericChoice);
+        case 1: RegisterNewBand();
             break; 
 
-        case 2: Console.WriteLine("Chosen option " + NumericChoice);
+        case 2: BandList();
             break;
 
         case 3: Console.WriteLine("Chosen option " + NumericChoice);
@@ -48,7 +50,35 @@ void ShowMenuOptions()
             break;
     }
 
+}
+
+void RegisterNewBand()
+{
+    Console.Clear();
+    Console.Write("Enter Band name: ");
+    string BandName = Console.ReadLine()!;
+    BandListName.Add(BandName);
+    Console.WriteLine($"{BandName} Band was successful registered");
+    Thread.Sleep(1500);
+    Console.Clear();
+    ShowMenuOptions();
 
 }
+
+
+void BandList()
+{
+    Console.Clear();
+    Console.Write("Band List: \n");
+    for (int i = 0; i < BandListName.Count; i++)
+    {
+        Console.WriteLine($"Band: {BandListName[i]}");
+    };
+    Console.WriteLine("Enter any digit to show MENU OPTIONS");
+    Console.ReadKey();
+    ShowMenuOptions();
+
+}
+
 
 ShowMenuOptions();
