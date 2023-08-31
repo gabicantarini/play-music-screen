@@ -1,0 +1,14 @@
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\bin\Debug\net6.0\PlayMusicOO.exe
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\bin\Debug\net6.0\PlayMusicOO.deps.json
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\bin\Debug\net6.0\PlayMusicOO.runtimeconfig.json
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\bin\Debug\net6.0\PlayMusicOO.dll
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\bin\Debug\net6.0\PlayMusicOO.pdb
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\PlayMusicOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\PlayMusicOO.AssemblyInfoInputs.cache
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\PlayMusicOO.AssemblyInfo.cs
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\PlayMusicOO.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\PlayMusicOO.dll
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\refint\PlayMusicOO.dll
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\PlayMusicOO.pdb
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\PlayMusicOO.genruntimeconfig.cache
+C:\Users\Gabriela\Projects\play-music-screen\PlayMusicOO\PlayMusicOO\obj\Debug\net6.0\ref\PlayMusicOO.dll

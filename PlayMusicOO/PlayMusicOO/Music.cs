@@ -5,7 +5,7 @@
    public int duration;
    public bool available;
 
-    void ShowTechnicalFile()
+   public void ShowTechnicalFile()
     {
         Console.WriteLine($"Name: {name}.");
         Console.WriteLine($"Artist: {artistName}.");
@@ -17,8 +17,7 @@
             Console.WriteLine("Its not Available. Please buy PLAN PLUS++"); 
         }
     }
-
-
+    
 }
 
 
