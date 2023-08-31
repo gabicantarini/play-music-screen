@@ -58,6 +58,7 @@ void ShowMenuOptions()
 void RegisterNewBand()
 {
     Console.Clear();
+    ShowOptionsTitle(" Register New Band ");
     Console.Write("Enter Band name: ");
     string bandName = Console.ReadLine()!;
     registeredBands.Add(bandName, new List<int>());
@@ -93,12 +94,23 @@ void ShowOptionsTitle( string title){
 void RateBand()
 {
     Console.Clear();
-    Console.Write("Enter rate band name: ");
+    ShowOptionsTitle(" Band Rate ");
+    Console.Write("Enter band name for rating: ");
     string bandsName = Console.ReadLine()!;
-    registeredBands.Add(bandsName, new List<int>());
-    foreach (string band in registeredBands.Keys)
+    if (registeredBands.ContainsKey(bandsName))
     {
-        Console.WriteLine($"Band {band} Rate: {band}");
+        Console.Write($"Enter band {bandsName} rate: ");
+        string bandsRate = Console.ReadLine()!;
+        int numericRate = int.Parse(bandsRate);
+        Console.Write($"{bandsName} rate: {numericRate}");
+        Console.WriteLine("\nEnter any digit to show MENU OPTIONS");
+        Console.ReadKey();
+    }
+    else
+    {
+        Console.WriteLine($"\nBand {bandsName} NOT FOUND");
+        Console.WriteLine("\nEnter any digit to show MENU OPTIONS");
+        Console.ReadKey();
     }
 }
 ShowMenuOptions();
