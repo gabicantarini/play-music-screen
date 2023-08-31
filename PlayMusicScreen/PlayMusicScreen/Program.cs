@@ -43,7 +43,7 @@ void ShowMenuOptions()
         case 3: RateBand();
             break;
 
-        case 4: 
+        case 4: ShowAverageBand();
             break;
 
         case -1: Console.WriteLine("BYE BYE :)");
@@ -104,7 +104,7 @@ void RateBand()
         int numericRate = int.Parse(bandsRate);
         registeredBands[bandsName].Add(numericRate);
         Console.Write($"{bandsName} rate: {numericRate}");
-        Console.WriteLine($"\nBand {bandsName} successfully registered!!");
+        Console.WriteLine($"\nBand {bandsName} rate was successfully registered!!");
         Thread.Sleep(1000);
         Console.Clear();
         ShowMenuOptions();
@@ -118,5 +118,26 @@ void RateBand()
     }
 }
 
-
+void ShowAverageBand()
+{
+    Console.Clear();
+    ShowOptionsTitle(" Show Average Band Rate");
+    Console.WriteLine("Enter band name: ");
+    string bandsName = Console.ReadLine()!;
+    if (registeredBands.ContainsKey(bandsName))
+    {
+        List<int> bandsAverage = registeredBands[bandsName];
+        Console.WriteLine($"\nBand {bandsName} Average is: {bandsAverage.Average()}");
+        Thread.Sleep(1000);
+        Console.Clear();
+        ShowMenuOptions();
+    }
+    else
+    {
+        Console.WriteLine($"\nBand {bandsName} NOT FOUND");
+        Console.WriteLine("\nEnter any digit to show MENU OPTIONS");
+        Console.ReadKey();
+        ShowMenuOptions();
+    }
+}
 ShowMenuOptions();
