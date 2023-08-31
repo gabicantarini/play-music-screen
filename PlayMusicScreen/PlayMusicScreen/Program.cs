@@ -43,7 +43,7 @@ void ShowMenuOptions()
         case 3: RateBand();
             break;
 
-        case 4: Console.WriteLine("Chosen option " + numericChoice);
+        case 4: 
             break;
 
         case -1: Console.WriteLine("BYE BYE :)");
@@ -102,15 +102,21 @@ void RateBand()
         Console.Write($"Enter band {bandsName} rate: ");
         string bandsRate = Console.ReadLine()!;
         int numericRate = int.Parse(bandsRate);
+        registeredBands[bandsName].Add(numericRate);
         Console.Write($"{bandsName} rate: {numericRate}");
-        Console.WriteLine("\nEnter any digit to show MENU OPTIONS");
-        Console.ReadKey();
+        Console.WriteLine($"\nBand {bandsName} successfully registered!!");
+        Thread.Sleep(1000);
+        Console.Clear();
+        ShowMenuOptions();
     }
     else
     {
         Console.WriteLine($"\nBand {bandsName} NOT FOUND");
         Console.WriteLine("\nEnter any digit to show MENU OPTIONS");
         Console.ReadKey();
+        ShowMenuOptions();
     }
 }
+
+
 ShowMenuOptions();
