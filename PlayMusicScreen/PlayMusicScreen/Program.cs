@@ -1,4 +1,4 @@
-﻿string WelcomeMessage = @"
+﻿string welcomeMessage = @"
 
 ██████╗░██╗░░░░░░█████╗░██╗░░░██╗  ███╗░░░███╗██╗░░░██╗░██████╗██╗░█████╗░
 ██╔══██╗██║░░░░░██╔══██╗╚██╗░██╔╝  ████╗░████║██║░░░██║██╔════╝██║██╔══██╗
@@ -7,11 +7,16 @@
 ██║░░░░░███████╗██║░░██║░░░██║░░░  ██║░╚═╝░██║╚██████╔╝██████╔╝██║╚█████╔╝
 ╚═╝░░░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═╝░░░░░╚═╝░╚═════╝░╚═════╝░╚═╝░╚════╝░" + "\n \nWelcome to Play Music!";
 
-List<string> BandListName = new List<string>{"U2", "Cold Play", "Lulu Santos"};
+//List<string> BandListName = new List<string>{"U2", "Cold Play", "Lulu Santos"};
+
+Dictionary<string, List<int>> registeredBands = new Dictionary<string, List<int>>();
+registeredBands.Add("U2", new List<int> {8, 10, 6});
+registeredBands.Add("Cold Play", new List<int>());
+
 
 void ShowWelcomeMessage()
 {
-    Console.WriteLine(WelcomeMessage);   
+    Console.WriteLine(welcomeMessage);   
 }
 
 void ShowMenuOptions()
@@ -24,10 +29,10 @@ void ShowMenuOptions()
     Console.WriteLine("Enter -1 to exit");
 
     Console.Write("Enter your option: ");
-    string ChosenOption = Console.ReadLine()!;
-    int NumericChoice = int.Parse(ChosenOption);
+    string chosenOption = Console.ReadLine()!;
+    int numericChoice = int.Parse(chosenOption);
 
-    switch (NumericChoice)
+    switch (numericChoice)
     {
         case 1: RegisterNewBand();
             break; 
@@ -35,10 +40,10 @@ void ShowMenuOptions()
         case 2: BandList();
             break;
 
-        case 3: Console.WriteLine("Chosen option " + NumericChoice);
+        case 3: RateBand();
             break;
 
-        case 4: Console.WriteLine("Chosen option " + NumericChoice);
+        case 4: Console.WriteLine("Chosen option " + numericChoice);
             break;
 
         case -1: Console.WriteLine("BYE BYE :)");
@@ -54,9 +59,9 @@ void RegisterNewBand()
 {
     Console.Clear();
     Console.Write("Enter Band name: ");
-    string BandName = Console.ReadLine()!;
-    BandListName.Add(BandName);
-    Console.WriteLine($"{BandName} Band was successful registered");
+    string bandName = Console.ReadLine()!;
+    registeredBands.Add(bandName, new List<int>());
+    Console.WriteLine($"{bandName} Band was successful registered");
     Thread.Sleep(1500);
     Console.Clear();
     ShowMenuOptions();
@@ -66,16 +71,34 @@ void RegisterNewBand()
 void BandList()
 {
     Console.Clear();
-    Console.WriteLine("****************");
-    Console.WriteLine("  Band List ");
-    Console.WriteLine("****************\n");
-    foreach (string Band in BandListName)
+    ShowOptionsTitle(" Band List ");
+    foreach (string band in registeredBands.Keys)
     { 
-        Console.WriteLine($"Band: {Band}");
+        Console.WriteLine($"Band: {band}");
     };
     Console.WriteLine("\nEnter any digit to show MENU OPTIONS");
     Console.ReadKey();
     ShowMenuOptions();
 }
 
+void ShowOptionsTitle( string title){
+    
+    int countTitle = title.Length;
+    string asterisks = string.Empty.PadLeft(countTitle, '*');
+    Console.WriteLine(asterisks);
+    Console.WriteLine(title);
+    Console.WriteLine(asterisks + "\n");
+}
+
+void RateBand()
+{
+    Console.Clear();
+    Console.Write("Enter rate band name: ");
+    string bandsName = Console.ReadLine()!;
+    registeredBands.Add(bandsName, new List<int>());
+    foreach (string band in registeredBands.Keys)
+    {
+        Console.WriteLine($"Band {band} Rate: {band}");
+    }
+}
 ShowMenuOptions();
