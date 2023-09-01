@@ -1,16 +1,16 @@
 ﻿Music music1 = new Music();
 
-music1.name = "Vertigo";
-music1.artistName = "U2";
-music1.duration = 200;
-music1.available = true;
+music1.Name = "Vertigo";
+music1.ArtistName = "U2";
+music1.Duration = 200;
+music1.Available = true;
 
 Music music2 = new Music();
 
-music2.name = "Morena";
-music2.artistName = "Los Hermanos";
-music2.duration = 230;
-music2.available = false;
+music2.Name = "Morena";
+music2.ArtistName = "Los Hermanos";
+music2.Duration = 230;
+music2.Available = false;
 
 
 music1.ShowTechnicalFile();
