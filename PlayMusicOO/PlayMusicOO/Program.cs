@@ -1,17 +1,14 @@
-﻿Music music1 = new Music();
+﻿Album u2Album = new Album();
 
-music1.Name = "Vertigo";
-music1.ArtistName = "U2";
-music1.Duration = 200;
-music1.Available = true;
+u2Album.Name = "The Best of 1990-2000";
+
+Music music1 = new Music();
+music1.Name = "Beautiful Day";
+music1.Duration = 243;
 
 Music music2 = new Music();
+music2.Name = "One";
+music2.Duration = 261;
 
-music2.Name = "Morena";
-music2.ArtistName = "Los Hermanos";
-music2.Duration = 230;
-music2.Available = false;
-
-
-music1.ShowTechnicalFile();
-music2.ShowTechnicalFile();
+u2Album.AddMusic(music1);
+u2Album.AddMusic(music2);
