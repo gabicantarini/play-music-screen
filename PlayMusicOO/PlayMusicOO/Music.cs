@@ -1,7 +1,13 @@
 ﻿class Music
 {
-    public string Name { get; set; }
-    public string ArtistName { get; set; }
+    public Music(Band artistName, string name)
+    {
+        ArtistName = artistName;
+        Name = name;
+    }
+
+    public string Name { get; }
+    public Band ArtistName { get; }
     public int Duration { get; set; }
     public bool Available { get; set; } // property write(set)  and read(get) operation
 
