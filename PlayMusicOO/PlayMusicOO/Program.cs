@@ -13,3 +13,9 @@ music2.Duration = 261;
 u2Album.AddMusic(music1);
 u2Album.AddMusic(music2);
 u2Album.ShowMusicOnAlbum();
+
+Band u2 = new Band();
+u2.Name = "U2";
+u2.AddAlbum(u2Album);
+u2.ShowDiscography();
+
