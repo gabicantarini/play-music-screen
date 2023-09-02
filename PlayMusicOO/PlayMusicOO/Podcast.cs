@@ -15,5 +15,11 @@
         Console.WriteLine($"Poscast name: {Name}, hosted by {Host}.");
     }
 
+    public void AddChapter()
+    {
+
+    }
+
 }
+
 
