@@ -17,7 +17,7 @@
     {
         foreach (Album album in albums)
         {
-            Console.WriteLine($"Discography name {album.Name} {album.TotalDuration}.");
+            Console.WriteLine($"Discography name {album.Name} with total duration{album.TotalDuration}.");
         }
     }
 

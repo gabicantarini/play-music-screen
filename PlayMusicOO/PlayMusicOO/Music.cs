@@ -14,8 +14,9 @@
     public string Summary => $"The music {Name} is from the {ArtistName} band."; // Lambda: is the arrow function in C# 
     public void ShowTechnicalFile()
     {
+        Console.WriteLine("\nTechnical Information:");
         Console.WriteLine($"Name: {Name}.");
-        Console.WriteLine($"Artist: {ArtistName}.");
+        Console.WriteLine($"Artist: {ArtistName.Name}.");
         Console.WriteLine($"Duration: {Duration}.");
         if (Available) {
             Console.WriteLine("Its Available!!");
