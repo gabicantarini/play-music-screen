@@ -9,7 +9,7 @@
     }
 
     public int Number { get; }
-    public string Title { get; set; }
+    public string Title { get; }
     public int Duration { get; set; }
     public string Summary => $"The today´s chapter is number: {Number}, title: {Title}, duration: {Duration}, guest: {string.Join(" , ", guest)}.";
 
