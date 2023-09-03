@@ -1,6 +1,6 @@
 ﻿class Chapter
 {
-    private List<string> newGuest = new();
+    private List<string> guest = new();
       
     public Chapter(int number, string title)
     {
@@ -11,11 +11,11 @@
     public int Number { get; }
     public string Title { get; set; }
     public int Duration { get; set; }
-    public string Summary => $"The today´s chapter is number {Number}, {Title} and duration {Duration}.";
+    public string Summary => $"The today´s chapter is number: {Number}, title: {Title}, duration: {Duration}, guest: {string.Join(" , ", guest)}.";
 
-    public void AddGuest(string guest)
+    public void AddGuest(string newGuest)
     {
-        newGuest.Add(guest); //added music in the album list
+        guest.Add(newGuest); //added music in the album list
     }
 
 }
